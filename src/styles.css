@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+html body {
+    background-color: black;
+  }
+  h1:first-of-type::first-letter,
+  h2:first-of-type::first-letter,
+p:first-of-type::first-letter {
+  color: red;
+}
+:root {
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: var(--font-family);
+}

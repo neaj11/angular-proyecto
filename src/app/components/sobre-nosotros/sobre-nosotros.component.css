@@ -1,0 +1,78 @@
+.image-container {
+  position: relative;
+  width: 100%;
+/* Ajusta la altura según tus necesidades */
+ 
+
+}
+
+.image-container__image {
+  width: 100%;
+  text-shadow: 0.8;
+  animation: zoomInOut 10s infinite alternate;
+  -webkit-animation: zoomInOut 10s infinite alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.text-container__title,
+.text-container__paragraph,
+.additional-info__title,
+.additional-info__paragraph {
+  margin: 0;
+}
+
+.additional-info {
+  margin-top: 50px;
+}
+
+@media (max-width: 1100px) {
+  .additional-info {
+    margin-top: 20px;
+  }
+}
+
+.additional-info > div {
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  color: white;
+  background-color: red;
+  
+}
+
+.btn-custom:hover {
+  color: red;
+  background-color: white;
+}
+.custom-text-width {
+  max-width: 400px; /* Ajusta el valor según el ancho deseado */
+}
+
+.text-justify {
+  text-align: justify;
+}
